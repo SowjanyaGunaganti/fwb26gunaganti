@@ -24,9 +24,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/users', grapesRouter);
-app.use('/users', addmodsRouter);
-app.use('/users', selectorRouter);
+app.use('/grapes', grapesRouter);
+app.use('/addmods', addmodsRouter);
+app.use('/selector', selectorRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
