@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  p Hi Im Sowjanya Gunaganti
+  - var results = [{"type":"Black Grapes", "quantity":5,"cost":8},{"type":"Green Grapes","quantity":10,"cost":5},{"type":"Red Grapes","quantity":15,"cost":6}]
+       div(class="container-fluid")
+         div(class="row")
+            each va,ind in results
+              div(class="col-sm-2" onClick=`buy(${ind})`)
+                p #{va.color}
+                p #{va.quantity}
+                p #{va.cost}
+                
